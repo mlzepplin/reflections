@@ -1,1 +1,12 @@
 When would you want to use a remote repository rather than keeping all your work local?
+whenever want to push or pull stuff from github
+
+
+
+how to push
+git push NAME_OF_REMOTE_WANT_TO_USE NAME_OF_BRANCH_WANT_TO_PUSH
+
+
+how to pull
+git pull NAME_OF_REMOTE_WANT_TO_USE NAME_OF_BRANCH_WANT_TO_PULL
+
