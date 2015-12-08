@@ -1,0 +1,98 @@
+Q: How did viewing a diff between two versions of a file help you see the bug that was introduced?
+A: using 'diff -u previousFile newFile i was able to pin-point the differences in these two files very easily and spot the bug
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+A: no loss of previous versions, and no time wastage in recovering
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+A: pros:- less clutter
+			only sensible commits made
+	cons:- sometimes may forget to commit an important stage
+			and am now unable to access it
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+A: cause made for codes -.-
+
+
+
+
+
+
+
+
+Cloning a Repository
+
+To clone a repository,
+
+1) cd into wherever you want to cloned the repository to exist
+
+2) run git clone followed by a space and the repository URL.
+
+Asteroids URL
+
+Use the following url to clone the Asteroids repository: https://github.com/udacity/asteroids.git
+
+
+
+
+Using git log and git diff
+
+
+LOG
+Now first cd into the cloned repository then
+
+running git log will show a list of the recent commits with information about them, including commit IDs.
+
+NOTE: the list will be displayed less, you need to scroll down to see even previos commits by using the cursor keys
+
+then to quit the git log, press q
+
+
+DIFF
+Running git diff followed by two commit IDs will compare the two versions of the code in those commits. 
+
+
+Getting Colored Output
+To get colored diff output, run git config --global color.ui auto
+
+
+
+
+
+
+
+
+
+Git Errors and Warnings Solution
+
+Should not be doing an octopus 
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state 
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+
+
+
+
+
+
+going to a previous state
+
+CHECKOUT- SWITCHING THE WHOLE CLONED REPOSITORY TO HOW IT WAS AT SOME PREVIOUS COMMIT
+
+first pinpoint the commit id, you want the repository to checkout to,
+
+then use:  git checkout some_commit_id
+
+and the whole cloned repository will be set to how it was at the time of that commit
+
+
+
+
+
+
+
+
+How might using version control make you more confident to make changes that could break something?
+now we can be sure that all the milestones are safe and that anything i change to check on my version of the repository, will not harm any of the commited code, and even if i commit there's always the option of going back. MAKES ME MORE CORAGEOUS TO PLAY WITH THE PROJECT
