@@ -1,0 +1,26 @@
+Q: What happens when you initialize a repository? Why do you need to do it?
+A: A git repository is not just a folder, it also has some hidden metadata(which can be viewed by ls -a), which is a .git file .which is used to keep track of what has been comitted, when was it ,etc.
+
+using git init will make the current directory a git repository,i.e it creates a repository
+
+then using git status will explain the repositories status
+
+
+Q: How is the staging area different from the working directory and the repository? What value do you think it offers?
+A: staging area is the intermediary step between a working directory and a repository
+whatever needs to go on as a single commit(multiple files) are added to the staging area using,
+ git add filename
+ and from there they are commited as a single commit using,
+ git commit OR git commit -m "message" 
+
+what value does staging offer:-  it helps to minimize the clutter, otherwise we would be commiting every single file seperately even if say these multiple file's changes together was only bringing out one single logical change in the program
+
+COMPARING THE WORKING DIRECTORY, STAGING AREA, REPOSITORY FILES BY VERSIONS OF DIFF:-
+
+to compare bw various commits of the git repository-   use 'git diff commit_id_1 commit_id_2'
+
+to compare bw working directory and staging area-  use just 'git diff'
+
+to compare bw staging area and the repository-   use 'git diff --staged'
+
+
